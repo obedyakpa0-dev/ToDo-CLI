@@ -116,6 +116,4 @@ Troubleshooting
 node index.js <command>
 ```
 
-Want more?
 
-- I can add example `task.json` content, or implement command aliases (e.g., `done` → `complete`, `rm` → `delete`) if you want shorthand commands.
