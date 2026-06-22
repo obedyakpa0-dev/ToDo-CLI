@@ -103,6 +103,19 @@ Persistence
 ]
 ```
 
+Manually creating a tasks.json file (optional)
+
+If you'd like to create the tasks file yourself (for example to pre-populate tasks or ensure the file exists), create a file named `tasks.json` in the project root with the same JSON structure shown above. Example:
+
+```json
+[
+  { "id": 1, "task": "Buy milk", "completed": false },
+  { "id": 2, "task": "Write README", "completed": true }
+]
+```
+
+Note: the CLI creates `task.json` automatically by default. If you prefer the filename `tasks.json`, update the code in `index.js` to point to `tasks.json` instead of `task.json` (search for the filename in the source and change it), or rename `tasks.json` to `task.json` so the CLI can read it without changes.
+
 Notes
 
 - IDs are assigned sequentially based on array length when adding; deleting tasks will not reassign existing IDs in the current implementation.
@@ -115,5 +128,3 @@ Troubleshooting
 ```bash
 node index.js <command>
 ```
-
-
